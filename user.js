@@ -21,21 +21,4 @@ document.getElementById('submitBtn').addEventListener('click', function (event) 
     // Bạn có thể xử lý form tiếp theo ở đây (submit hoặc các hành động khác)
   }
 });
-
-$('.nav-item').hover(function () {
-  // Hiện dropdown-menu
-  $('.dropdown-menu', this).stop(true, true).slideDown();
-  $('.overlay').fadeIn(); // Hiện lớp phủ
-}, function () {
-  // Ẩn dropdown-menu
-  $('.dropdown-menu', this).stop(true, true).slideUp();
-  $('.overlay').fadeOut(); // Ẩn lớp phủ
-});
-
-// Ẩn lớp phủ khi click bên ngoài dropdown-menu
-$(document).click(function (e) {
-  if (!$(e.target).closest('.nav-item').length) {
-    $('.dropdown-menu').slideUp();
-    $('.overlay').fadeOut(); // Ẩn lớp phủ
-  }
-});
+  

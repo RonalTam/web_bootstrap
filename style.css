@@ -37,7 +37,7 @@ body {
     display: block;
     opacity: 1;
     transform: translateY(0);
-    
+
 }
 
 .menu:hover .nav-link {
@@ -128,14 +128,73 @@ body {
 }
 
 
-
-.minicart {
+/* Gio hang */
+.cart {
     font-size: 23px;
 }
 
-.minicart .bi {
+.cart .bi {
     color: black;
 }
+
+.cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#cart-btn {
+    font-size: 21px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+#cart-count {
+    font-size: 18px;
+    color: yellow;
+}
+
+#card-logo {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 20px 0;
+}
+
+/* Minicart chi tiết */
+.minicart {
+    position: fixed;
+    top: 73px;
+    right: 10px;
+    width: 420px;
+    border: none;
+    background-color: #fff;
+    display: none;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .25);
+    z-index: 1000;
+}
+
+#cart-items {
+    padding: 10px;
+    max-height: 200px;
+}
+
+.cart-footer {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+/* .cart-footer button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+} */
+
+/* Gio hang */
 
 .custom-list-group .list-group-item {
     border: none;
@@ -195,8 +254,10 @@ body {
 .footer .row {
     background-color: #f8f9fa;
     padding: 20px 16px 0;
-    border-top: 1px solid #ddd; /* Thêm đường viền trên */
-  border-bottom: 1px solid #ddd; /* Thêm đường viền dưới */
+    border-top: 1px solid #ddd;
+    /* Thêm đường viền trên */
+    border-bottom: 1px solid #ddd;
+    /* Thêm đường viền dưới */
 }
 
 .footer h5 {
