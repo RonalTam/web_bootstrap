@@ -9,6 +9,54 @@ body {
     line-height: 1.42857143;
 }
 
+.nav-item {
+    margin: 0 10px;
+}
+
+.header .navbar a:hover {
+    color: #c9ae63;
+}
+
+.header .dropdown-menu {
+    left: 0;
+    font-size: small;
+}
+
+
+.dropdown-menu {
+    display: none;
+    padding-top: 50px;
+    border: 0;
+    border-radius: 0;
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.menu:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    
+}
+
+.menu:hover .nav-link {
+    color: #c9ae63;
+    transition: 1s;
+    transform: translateY(-5px);
+}
+
+
+.dropdown-item:hover {
+    background: none;
+}
+
+.collapse .li::after {
+    content: "";
+    height: 40px;
+    display: flex;
+}
+
 .search-bar {
     border-radius: 20px;
     padding: 8px 15px;
@@ -146,7 +194,7 @@ body {
 
 .footer .row {
     background-color: #f8f9fa;
-    padding: 20px 16px 38px;
+    padding: 20px 16px 0;
     border-top: 1px solid #ddd; /* Thêm đường viền trên */
   border-bottom: 1px solid #ddd; /* Thêm đường viền dưới */
 }
@@ -173,6 +221,12 @@ body {
 
 .footer ul li a:hover {
     color: #c9ae63;
+}
+
+.footer .hotline p {
+    color: #323232;
+    padding: 0 0;
+    margin: 0 0;
 }
 
 .footer p {
