@@ -46,6 +46,10 @@ body {
     transform: translateY(-5px);
 }
 
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #c9ae63;
+}
+
 
 .dropdown-item:hover {
     background: none;
@@ -255,9 +259,7 @@ body {
     background-color: #f8f9fa;
     padding: 20px 16px 0;
     border-top: 1px solid #ddd;
-    /* Thêm đường viền trên */
     border-bottom: 1px solid #ddd;
-    /* Thêm đường viền dưới */
 }
 
 .footer h5 {
@@ -307,3 +309,49 @@ body {
 .footer i:hover {
     color: #c9ae63;
 }
+
+/* slick */
+.products-slider {
+    padding: 0 18px;
+}
+
+.products-slider .card {
+    padding: 0 10px;
+    border: none;
+}
+
+.card img {
+    transition: filter 0.2s ease;
+}
+
+.card:hover img {
+    filter: brightness(0.7);
+}
+
+.card:hover .card-body a {
+    display: block;
+    transform: translate(-50%, -50%) translateY(0);
+    opacity: 1;
+}
+
+.card-body a {
+    /* display: none; */
+    background-color: #fff;
+    color: #323232;
+    padding: 10px 40px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%) translateY(-20px);
+    opacity: 0;
+    border: none;
+    border-radius: 2px;
+    /* transition: background-color 0.2s ease; */
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #c9ae63;
+}
+/* slick */
