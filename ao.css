@@ -1,0 +1,52 @@
+.banner {
+    position: relative;
+}
+
+.banner img {
+    padding: 16px;
+}
+
+.banner .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    width: 33.3%;
+}
+
+.banner .banner-text h1 {
+    color: #000000;
+}
+
+.banner .banner-text p {
+    color: #343434;
+}
+
+.list-group a {
+    text-decoration: none;
+    color: #656565;
+}
+
+.list-group strong, h5 {
+    color: #000000;
+    margin: 0;
+}
+
+.list-group h5 {
+    font-size: 16px;
+}
+
+.list-group a:hover, strong:hover, h5:hover {
+    color: #c9ae63;
+}
+
+.list-group-item {
+    border: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+}

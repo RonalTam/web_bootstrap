@@ -24,19 +24,20 @@ body {
 
 
 .dropdown-menu {
-    display: none;
+    display: block;
     padding-top: 50px;
     border: 0;
     border-radius: 0;
     opacity: 0;
-    transform: translateY(-300px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(30px);
+    transition: all 0.3s ease;
+    visibility: hidden;
 }
 
 .menu:hover .dropdown-menu {
-    display: block;
     opacity: 1;
     transform: translateY(0);
+    visibility: visible;
 
 }
 
@@ -46,7 +47,8 @@ body {
     transform: translateY(-5px);
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
     color: #c9ae63;
 }
 
@@ -103,7 +105,8 @@ body {
 
 .account-item {
     position: absolute;
-    display: none;
+    opacity: 0;
+    transform: translateX(35px);
     width: 270px;
     right: -55px;
     top: 55px;
@@ -128,7 +131,15 @@ body {
 }
 
 .account:hover .account-item {
-    display: block;
+    opacity: 1;
+    transition: all 0.4s ease;
+    transform: translateX(0);
+}
+
+.account:not(:hover) .account-item {
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform: translateX(35px);
 }
 
 
@@ -243,6 +254,16 @@ body {
     display: block;
 }
 
+.banner-subcribe .form-control {
+    border-radius: 0;
+    padding: 0;
+}
+
+.banner-subcribe .form-control:focus {
+    box-shadow: none;
+    background: none;
+}
+
 .newsletter input {
     width: 100%;
     max-width: 400px;
@@ -342,7 +363,7 @@ body {
     position: absolute;
     top: 60%;
     left: 50%;
-    transform: translate(-50%,-50%) translateY(-20px);
+    transform: translate(-50%, -50%) translateY(-20px);
     opacity: 0;
     border: none;
     border-radius: 2px;
@@ -354,4 +375,5 @@ body {
     color: #fff;
     background-color: #c9ae63;
 }
+
 /* slick */
