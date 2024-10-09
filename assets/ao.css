@@ -1,3 +1,10 @@
+.dropdown-menu {
+    /* position: absolute; */
+    top: 80%;
+    margin: 0;
+}
+
+
 .banner {
     position: relative;
 }
@@ -44,6 +51,25 @@
     border: none;
 }
 
+
+.card .card-body a {
+    padding: 10px 35px;
+}
+
+.card {
+    border: none;
+}
+
+.page-link {
+    border: none;
+    font-size: large;
+    color: rgba(44, 44, 44, 0.854) !important;
+}
+
+.page-link:hover {
+    background: none;
+    color: #c9ae63 !important;
+}
 
 @media only screen and (max-width: 600px) {
     .sidebar {
