@@ -22,11 +22,11 @@
     <nav class="navbar navbar-expand-lg p-3 fixed-top bg-white">
       <div class="container-fluid">
         <div class="mobile-narbar d-none">
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft"
-            aria-controls="offcanvasLeft" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-body">
               <!-- Nav tabs -->
               <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
@@ -45,25 +45,25 @@
                 <div class="tab-pane active" id="menu" role="tabpanel" aria-labelledby="menu-tab" tabindex="0">
                   <ul class="list-group">
                     <li class="list-group-item border-0 border-bottom">
-                      <span>HÀNG MỚI</span>
+                      <a href="index.html">HÀNG MỚI</a>
                     </li>
                     <li class="list-group-item border-0 border-bottom">
-                      <span>GIÁ TỐT</span>
-                      <div class="dropdown">
+                      <a href="">GIÁ TỐT</a>
+                      <!-- <div class="dropdown">
                         <button type="button" data-bs-toggle="dropdown" class="btn dropdown-toggle">
-                        </button>
+                        </button> -->
                         <!-- Menu dropdown -->
-                        <ul class="dropdown-menu">
+                        <!-- <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="#">Action</a></li>
                           <li><a class="dropdown-item" href="#">Another action</a></li>
                           <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                      </div>
+                      </div> -->
                     </li>
-                    <li class="list-group-item border-0 border-bottom"><span>ÁO</span></li>
-                    <li class="list-group-item border-0 border-bottom"><span>QUẦN</span></li>
-                    <li class="list-group-item border-0 border-bottom"><span>PHỤ KIỆN</span></li>
-                    <li class="list-group-item border-0 border-bottom"><span>CỬA HÀNG</span></li>
+                    <li class="list-group-item border-0 border-bottom"><a href="ao.html">ÁO</a></li>
+                    <li class="list-group-item border-0 border-bottom"><a href="">QUẦN</a></li>
+                    <li class="list-group-item border-0 border-bottom"><a href="">PHỤ KIỆN</a></li>
+                    <li class="list-group-item border-0 border-bottom"><a href="">CỬA HÀNG</a></li>
                   </ul>
                 </div>
                 <div class="tab-pane" id="user" role="tabpanel" aria-labelledby="user-tab" tabindex="0">
@@ -83,6 +83,9 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
             <li class="nav-item px-3">
               <a class="nav-link active" aria-current="page" href="index.html">HÀNG MỚI</a>
+              <span class="position-absolute translate-middle badge rounded-pill bg-danger"
+                style="top: 35%; left: 25%; font-size: 8px;">
+                HOT</span>
             </li>
             <li class="nav-item menu px-3">
               <a class="nav-link" href="ao.html">ÁO</a>
@@ -254,7 +257,7 @@
         <div class="mobile-search d-none">
           <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
             aria-controls="offcanvasRight"><i class="bi bi-search"></i></button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas offcanvas-end p-3" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-body">
               <input type="search" placeholder="Nhập từ khóa tìm kiếm" name="" id="">
               <div class="mt-4">

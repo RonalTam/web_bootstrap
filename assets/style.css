@@ -460,6 +460,17 @@ body {
         transform: translateX(0);
     }
 
+    .offcanvas-start {
+        pointer-events: none;
+        transform: translateX(100px);
+        transition: all 0.3s ease;
+    }
+
+    .offcanvas-start.show {
+        pointer-events: all;
+        transform: translateX(0);
+    }
+
     .minicart {
         width: 100%;
         right: 0;
@@ -480,6 +491,10 @@ body {
         font-weight: 600;
     }
 
+    .offcanvas-body {
+        padding: 0;
+    }
+
     .mobile-narbar {
         display: block !important;
     }
@@ -487,5 +502,14 @@ body {
     .tab-pane .list-group a {
         font-size: medium;
         font-weight: normal;
+    }
+
+    .nav-link {
+        color: #000;
+        font-weight: 600;
+    }
+
+    .nav-tabs {
+        background-color: #e8e8e8;
     }
 }
