@@ -268,23 +268,13 @@
           </div>
         </div>
         <div class="cart ms-3">
-          <button type="button" id="cart-btn" class="border-0 bg-transparent" data-bs-toggle="modal"
-            data-bs-target="#exampleModal">
-            <span><i class="bi bi-bag"></i></span>
-          </button>
-          <div class="minicart text-center" id="minicart">
-            <div id="card-logo">
-              <img src="img-th6/minicart.svg" class="" alt="">
-            </div>
-            <div id="cart-items">
-              <p>Không có sản phẩm nào trong giỏ hàng của bạn.</p>
-            </div>
-            <!-- <div class="cart-footer">
-                <p>Tổng: <span id="cart-total">$0</span></p>
-                <button id="checkout-btn">Thanh toán</button>
-              </div> -->
-          </div>
-        </div>
+          <a href="cart.html">
+              <button type="button" id="cart-btn" class="border-0 bg-transparent" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">
+                  <span><i class="bi bi-bag"></i></span>
+              </button>
+          </a>
+      </div>
       </div>
     </nav>
     <!-- <nav class="navbar py-0 border-bottom px-3 bg-white">
@@ -305,7 +295,7 @@
             <a href="index.html" class="text-decoration-none text-dark">Trang chủ </a>
           </li>
           <li class="list-group-item border-0 text-secondary">
-            Áo sơ mi - AS240047D
+            Áo Blazer - BL241364
           </li>
         </ul>
       </div>
@@ -317,9 +307,9 @@
                 <img id="mainImg" src="img-th6/owen1104_copy.webp" class="img-fluid" alt="">
               </div>
               <div class="col-md-2">
-                <img src="img-th6/owen1104_copy.webp" class="img-fluid" alt="" onclick="changeMainImage(this)">
-                <img src="img-th6/owen1140_copy.jpg" class="img-fluid my-2" alt="" onclick="changeMainImage(this)">
-                <img src="img-th6/bl241364.......jpg" class="img-fluid" alt="" onclick="changeMainImage(this)">
+                <img src="img-th6/owen1104_copy.webp" class="img-fluid img-sm" alt="" onclick="changeMainImage(this)">
+                <img src="img-th6/owen1140_copy.jpg" class="img-fluid img-sm my-2" alt="" onclick="changeMainImage(this)">
+                <img src="img-th6/bl241364.......jpg" class="img-fluid img-sm" alt="" onclick="changeMainImage(this)">
               </div>
             </div>
           </div>
@@ -398,9 +388,10 @@
             <div class="banner">
               <img src="img-th6/Artboard_23_1.webp" class="img-fluid" alt="">
             </div>
+            
             <div class="product-btn">
               <a href="#" class="d-grid gap-2 my-4 text-decoration-none">
-                <button class="btn " type="button">THÊM VÀO GIỎ HÀNG</button>
+                <button class="btn " type="button" onclick="addToCart(1, 'Áo Blazer - BL241364', 2500000 , 'img-th6/owen1104_copy.webp')">THÊM VÀO GIỎ HÀNG</button>
               </a>
             </div>
             <br>

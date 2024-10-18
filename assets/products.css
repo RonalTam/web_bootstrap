@@ -58,6 +58,10 @@
     .img-product-mobile {
         display: none;
     }
+
+    .img-sm {
+        cursor: pointer;
+    }
 }
 
 @media only screen and (max-width: 600px) {
